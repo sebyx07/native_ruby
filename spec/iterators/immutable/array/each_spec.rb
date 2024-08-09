@@ -2,7 +2,7 @@
 
 RSpec.describe 'Immutable Array#each' do
   before do
-    NativeRuby.config { |c| c.load(:iterators, { class: Array, method: :each }) }
+    NativeRuby.config { |c| c.load(:iterators, { class: Array, method: :each, mutable: false }) }
   end
 
   it 'works' do

@@ -2,7 +2,7 @@
 
 RSpec.describe 'Immutable Array#map' do
   before do
-    NativeRuby.config { |c| c.load(:iterators, { class: Array, method: :map }) }
+    NativeRuby.config { |c| c.load(:iterators, { class: Array, method: :map, mutable: false }) }
   end
 
   it 'works' do
