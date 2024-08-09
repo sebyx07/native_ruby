@@ -1,6 +1,7 @@
 # frozen_string_literal: true
 
 require_relative 'native_ruby/version'
+require_relative 'native_ruby/configuration'
 
 module NativeRuby
   class Error < StandardError; end
