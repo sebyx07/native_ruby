@@ -1,5 +1,6 @@
 # frozen_string_literal: true
 
+return if RUBY_VERSION >= '3.4.0' # already implemented in Ruby 3.4.0
 # Array
 class Array
   # Iterates the given block for each element with index.
