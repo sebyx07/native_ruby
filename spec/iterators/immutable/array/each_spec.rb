@@ -51,7 +51,7 @@ RSpec.describe 'Immutable Array#each' do
 
   it 'benchmarks native implementation against original' do
     array = (1..1_000_000).to_a
-    iterations = 10
+    iterations = 100
 
     puts "Benchmark results (average over #{iterations} iterations):"
     Benchmark.bm(20) do |x|
