@@ -62,10 +62,10 @@ RSpec.describe 'Array#each_with_index' do
     puts "Benchmark results (average over #{iterations} iterations):"
     Benchmark.bm(25) do |x|
       x.report('Original each_with_index:') do
-        iterations.times { array.original_each_with_index { |item, index| } }
+        iterations.times { array.original_each_with_index { |_, _| } }
       end
-      x.report('Native each_with_index:') do
-        iterations.times { array.each_with_index { |item, index| } }
+      x.report('Mutable Native each_with_index:') do
+        iterations.times { array.each_with_index { |_, _| } }
       end
     end
   end

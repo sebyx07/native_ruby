@@ -50,15 +50,15 @@ RSpec.describe 'Immutable Array#each' do
   end
 
   it 'benchmarks native implementation against original' do
-    array = (1..1_000_000).to_a
-    iterations = 100
+    array = (1..10_000_000).to_a
+    iterations = 10
 
     puts "Benchmark results (average over #{iterations} iterations):"
     Benchmark.bm(20) do |x|
       x.report('Original each:') do
         iterations.times { array.original_each { |n| n * 2 } }
       end
-      x.report('Native each:') do
+      x.report('Immutable Native each:') do
         iterations.times { array.each { |n| n * 2 } }
       end
     end
