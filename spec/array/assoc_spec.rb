@@ -1,7 +1,5 @@
 # frozen_string_literal: true
 
-require 'benchmark'
-
 RSpec.describe 'Array#assoc' do
   before do
     class Array

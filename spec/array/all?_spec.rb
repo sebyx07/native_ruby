@@ -1,7 +1,5 @@
 # frozen_string_literal: true
 
-require 'benchmark'
-
 RSpec.describe 'Array#all?' do
   before do
     class Array

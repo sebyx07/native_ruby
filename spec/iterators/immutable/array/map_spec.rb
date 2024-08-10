@@ -1,7 +1,5 @@
 # frozen_string_literal: true
 
-require 'benchmark'
-
 RSpec.describe 'Immutable Array#map' do
   before do
     class Array

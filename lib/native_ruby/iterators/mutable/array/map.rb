@@ -28,4 +28,6 @@ class Array
     end
     result
   end
+
+  alias_method :collect, :map
 end
