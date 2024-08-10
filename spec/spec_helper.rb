@@ -2,6 +2,7 @@
 
 require 'native_ruby'
 require 'pry'
+require 'benchmark'
 
 RSpec.configure do |config|
   # Enable flags like --only-failures and --next-failure

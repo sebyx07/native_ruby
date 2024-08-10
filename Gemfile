@@ -12,3 +12,7 @@ gem 'rspec', '~> 3.0'
 gem 'rubocop-rails_config', '~> 1.16'
 
 gem 'pry', '~> 0.14.2'
+
+gem 'benchmark', '~> 0.3.0'
+
+gem 'lefthook', '~> 1.7', '>= 1.7.4'
