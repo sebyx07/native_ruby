@@ -59,7 +59,7 @@ RSpec.describe 'Array#bsearch' do
 
   it 'benchmarks native implementation against original' do
     array = (1..10_000_000).to_a
-    iterations = 1000000
+    iterations = 10000000
 
     puts "Benchmark results (average over #{iterations} iterations):"
     Benchmark.bm(20) do |x|

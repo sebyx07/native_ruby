@@ -57,12 +57,12 @@ class Array
         case yield(self[mid])
         when 0
           return self[mid]
-        when 1...Float::INFINITY
+        when 1
           high = mid - 1
-        when -Float::INFINITY...0
+        when -1
           low = mid + 1
         else
-          raise TypeError, 'wrong argument type (must be numeric, true, or false)'
+          raise TypeError, 'wrong argument type (must be -1, 0, 1, true, or false)'
         end
         mid = low + (high - low) / 2
       end
