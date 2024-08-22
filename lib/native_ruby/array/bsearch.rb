@@ -36,12 +36,8 @@ class Array
     high = size - 1
     mid = size / 2
 
-    # Determine the mode based on the first yield result
-    finder = yield(self[mid])
-    find_minimum_mode = finder || !finder
-
-    if find_minimum_mode
-      # Find-minimum mode
+    case yield(self[low])
+    when true, false
       while low < high
         if yield(self[mid])
           high = mid
